@@ -1,5 +1,4 @@
-// Small interaction layer for the portfolio.
-// More interactions can be added as the portfolio grows.
+// Portfolio scroll-reveal animation
 
 const revealElements = document.querySelectorAll(".reveal");
 
@@ -12,7 +11,9 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.12 }
+  {
+    threshold: 0.12
+  }
 );
 
 revealElements.forEach((element) => {
